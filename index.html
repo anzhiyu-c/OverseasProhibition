@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>海外禁止访问</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/x-icon" href="./img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="海外禁止访问" />
+    <link rel="bookmark" href="./img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="./img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="海外禁止访问，请使用中国大陆网络访问。" />
+    <meta name="theme-color" content="#f6f7f8" />
+  </head>
+  <body>
+    <div class="prohibition">
+      <div class="card">
+        <div class="title">
+          <h1 alt="禁止海外访问">禁止海外访问</h1>
+          <h2 class="title-tip">❗️</h2>
+        </div>
+        <button onclick="location.reload()" class="refresh">刷新</button>
+        <div class="tips">点击按钮🔘进行刷新</div>
+        <div class="prohibition-card">
+          <div class="prohibition-head"></div>
+          <div class="prohibition-info">
+            <div class="prohibition-name">安知鱼</div>
+            <div class="prohibition-description">生活明朗，万物可爱</div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="help"
+        href="https://kf.qq.com/touch/wxappfaq/1208117b2mai141113jaqAnU.html?platform=14"
+        title="帮助"
+        target="_blank"
+      >
+      请使用中国大陆网络访问
+      </a>
+    </div>
+    <script>
+      // 改进vh
+      const vh = window.innerHeight * 1;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+      window.addEventListener("resize", () => {
+        let vh = window.innerHeight * 1;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      });
+    </script>
+  </body>
+</html>

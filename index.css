@@ -1,0 +1,108 @@
+body {
+  background: #f6f7f8;
+  margin: 0;
+  padding: 0;
+}
+
+.prohibition {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--vh);
+}
+
+.card {
+  background: #fff;
+  max-width: 428px;
+  max-height: 569px;
+  border-radius: 16px;
+  padding: 24px 36px 20px 36px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.title {
+  width: 256px;
+  height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-tip {
+  font-size: 50px;
+  margin: 0;
+}
+
+.tips {
+  font-size: 14px;
+  color: #000;
+  opacity: 0.5;
+  margin-top: 8px;
+}
+
+.prohibition-card {
+  width: 100%;
+  display: flex;
+  margin-top: 16px;
+  background: #F7F7F7;
+  padding: 18px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.prohibition-head {
+  width: 48px;
+  height: 48px;
+  background-image: url(./img/apple-touch-icon.png);
+  border-radius: 68px;
+  background-size: contain;
+  margin-right: 16px;
+}
+
+.prohibition-name {
+  font-weight: bold;
+}
+
+.prohibition-info {
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.refresh {
+  background: antiquewhite;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+  width: 100px;
+  cursor: pointer;
+}
+.refresh:active {
+  background: rgb(0, 110, 255);
+  color: #fff;
+}
+
+.prohibition-description {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.5;
+}
+
+a.help {
+  font-size: 14px;
+  color: #000;
+  opacity: 0.5;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+a.help:visited {
+  color: #000;
+}

@@ -3,7 +3,7 @@
  * @Author: 安知鱼
  * @Email: anzhiyu-c@qq.com
  * @Date: 2023-07-16 18:00:17
- * @LastEditTime: 2023-07-16 21:19:03
+ * @LastEditTime: 2023-07-17 12:33:33
  * @LastEditors: 安知鱼
 -->
 <!DOCTYPE html>
@@ -13,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>海外禁止访问</title>
-    <link rel="stylesheet" href="./index.css" />
     <link rel="icon" type="image/x-icon" href="./img/apple-touch-icon.png" />
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="海外禁止访问" />
@@ -29,20 +28,94 @@
     <meta name="description" content="海外禁止访问，请使用中国大陆网络访问。" />
     <meta name="theme-color" content="#f6f7f8" />
   </head>
-  <body>
-    <div class="prohibition">
-      <div class="card">
-        <div class="title">
-          <h1 alt="禁止海外访问">禁止海外访问</h1>
-          <h2 class="title-tip">❗️</h2>
+  <body style="background: #f6f7f8; margin: 0; padding: 0">
+    <div
+      class="prohibition"
+      style="
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: var(--vh);
+      "
+    >
+      <div
+        class="card"
+        style="
+          background: #fff;
+          max-width: 428px;
+          max-height: 569px;
+          border-radius: 16px;
+          padding: 24px 36px 20px 36px;
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          align-items: center;
+        "
+      >
+        <div
+          class="title"
+          style="
+            width: 256px;
+            height: 256px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          "
+        >
+          <h1 alt="禁止海外访问" style="margin: 0">禁止海外访问</h1>
+          <h2 class="title-tip" style="font-size: 50px; margin: 0">❗️</h2>
         </div>
-        <button onclick="location.reload()" class="refresh">刷新</button>
-        <div class="tips">请使用中国大陆网络访问</div>
-        <div class="prohibition-card">
-          <div class="prohibition-head"></div>
-          <div class="prohibition-info">
-            <div class="prohibition-name">安知鱼</div>
-            <div class="prohibition-description">生活明朗，万物可爱</div>
+        <button
+          onclick="location.reload()"
+          class="refresh"
+          style="
+            background: antiquewhite;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 6px;
+            width: 100px;
+            cursor: pointer;
+          "
+        >
+          刷新
+        </button>
+        <div class="tips" style="font-size: 14px; color: #000; opacity: 0.5; margin-top: 8px">
+          请使用中国大陆网络访问
+        </div>
+        <div
+          class="prohibition-card"
+          style="
+            width: 100%;
+            display: flex;
+            margin-top: 16px;
+            background: #f7f7f7;
+            padding: 18px;
+            border-radius: 16px;
+            align-items: center;
+          "
+        >
+          <div
+            class="prohibition-head"
+            style="
+              width: 48px;
+              height: 48px;
+              background-image: url(./img/apple-touch-icon.png);
+              border-radius: 68px;
+              background-size: contain;
+              margin-right: 16px;
+            "
+          ></div>
+          <div
+            class="prohibition-info"
+            style="height: 48px; display: flex; justify-content: space-around; flex-direction: column"
+          >
+            <div class="prohibition-name" style="font-weight: bold">安知鱼</div>
+            <div class="prohibition-description" style="font-size: 12px; color: #000; opacity: 0.5">
+              生活明朗，万物可爱
+            </div>
           </div>
         </div>
       </div>
@@ -51,15 +124,14 @@
         href="https://kf.qq.com/touch/wxappfaq/1208117b2mai141113jaqAnU.html?platform=14"
         title="帮助"
         target="_blank"
+        style="font-size: 14px; color: #000; opacity: 0.5; text-decoration: none; margin: 20px 0"
       >
-      点击按钮🔘进行刷新
+        点击按钮🔘进行刷新
       </a>
     </div>
     <script>
-      // 改进vh
       const vh = window.innerHeight * 1;
       document.documentElement.style.setProperty("--vh", `${vh}px`);
-
       window.addEventListener("resize", () => {
         let vh = window.innerHeight * 1;
         document.documentElement.style.setProperty("--vh", `${vh}px`);
